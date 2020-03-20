@@ -1,3 +1,3 @@
 # localhorst
 
-Support your localho(r)st
+Support your localho(r)st!
