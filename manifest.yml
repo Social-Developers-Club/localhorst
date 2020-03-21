@@ -1,5 +1,6 @@
 applications :
 - name: "localhorst_chatbot"
+  command: node app.js
   memory : 256M
   buildpack :
   - "https://github.com/cloudfoundry/staticfile-buildpack.git"
