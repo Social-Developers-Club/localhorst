@@ -1,0 +1,64 @@
+{
+  "responseId": "3bfee4e9-98d3-49ee-a136-d7b32a561b40-35305a77",
+  "queryResult": {
+    "queryText": "3",
+    "parameters": {
+      "number": 3
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Danke für die Info. Täglich kaufen durchschnittlich 3 Kunden bei dir ein.\nGleich zur nächsten Frage: Auf einer Skala von 1 bis 10, wobei 1 für miserabel und 10 für optimal steht, wie sieht deine aktuelle, finanzielle Situation aus?",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Danke für die Info. Täglich kaufen durchschnittlich 3 Kunden bei dir ein.\nGleich zur nächsten Frage: Auf einer Skala von 1 bis 10, wobei 1 für miserabel und 10 für optimal steht, wie sieht deine aktuelle, finanzielle Situation aus?"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/supportyourlocalhorst-eerujp/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/customer",
+        "parameters": {
+          "CompanyType": "Bäcker",
+          "CompanyType.original": "bäcker",
+          "number": 3,
+          "number.original": "3"
+        }
+      },
+      {
+        "name": "projects/supportyourlocalhorst-eerujp/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/financial",
+        "lifespanCount": 5,
+        "parameters": {
+          "number": 3,
+          "number.original": "3",
+          "geo-state": "Hawaii",
+          "geo-state.original": "hi",
+          "last-name": "",
+          "last-name.original": "",
+          "CompanyType": "Bäcker",
+          "CompanyType.original": "bäcker"
+        }
+      },
+      {
+        "name": "projects/supportyourlocalhorst-eerujp/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0,
+          "number": 3,
+          "number.original": "3"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/supportyourlocalhorst-eerujp/agent/intents/83ce3722-4a99-4dd8-9777-856b6de5c860",
+      "displayName": "CustomerCountIntent"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "de"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/supportyourlocalhorst-eerujp/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97"
+}
