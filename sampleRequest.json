@@ -1,0 +1,78 @@
+{
+  "responseId": "04e7c685-c041-4773-9a15-bf0034173bcf-35305a77",
+  "queryResult": {
+    "queryText": "plattform",
+    "parameters": {
+      "recommendationtype": "plattformen"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            ""
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/dummy-ybfjgq/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/problemtype",
+        "lifespanCount": 5,
+        "parameters": {
+          "problemtype": [
+            "Finanziell"
+          ],
+          "problemtype.original": [
+            "finanzielle hilfe"
+          ],
+          "recommendationtype": "plattformen",
+          "recommendationtype.original": "plattform"
+        }
+      },
+      {
+        "name": "projects/dummy-ybfjgq/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/recommendationtype",
+        "lifespanCount": 5,
+        "parameters": {
+          "recommendationtype": "plattformen",
+          "recommendationtype.original": "plattform"
+        }
+      },
+      {
+        "name": "projects/dummy-ybfjgq/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/companytype",
+        "lifespanCount": 4,
+        "parameters": {
+          "companytype": "freiberufler",
+          "companytype.original": "freiberufler",
+          "problemtype": [
+            "Finanziell"
+          ],
+          "problemtype.original": [
+            "finanzielle hilfe"
+          ],
+          "recommendationtype": "plattformen",
+          "recommendationtype.original": "plattform"
+        }
+      },
+      {
+        "name": "projects/dummy-ybfjgq/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0,
+          "recommendationtype": "plattformen",
+          "recommendationtype.original": "plattform"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/dummy-ybfjgq/agent/intents/f00cddd8-4d73-45f8-9f99-6c98a1cd04ba",
+      "displayName": "RecommendationType"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "de"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/dummy-ybfjgq/agent/sessions/e85aab4e-ac65-6a3b-792f-107880076e97"
+}

@@ -90,6 +90,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     agent.add(new Payload(agent.UNSPECIFIED, payload));
   }
+
+  function recommendationType(agent) {
+    console.log(agent.contexts)
+
+    agent.add('TEST ANALYZE CONTEXTS');
+  }
  
   function fallback(agent) {
     agent.add(`I didn't understand`);
