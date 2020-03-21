@@ -2,4 +2,3 @@ applications :
 - name: "localhorst_chatbot"
   command: node app.js
   memory: 256M
-  buildpack: sdk-for-nodejs
