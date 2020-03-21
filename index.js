@@ -42,6 +42,54 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     agent.add(new Payload(agent.UNSPECIFIED, payload));
   }
+
+  function companyType(agent) {
+    const payload = {
+      type: 'message',
+      attachments: [],
+      suggestedActions: [{
+        type: "postBack",
+        title: "Finanzielle Hilfe",
+        value: "Finanziell"
+      }, {
+        type: "postBack",
+        title: "Das Geschäft am laufen halten",
+        value: "Geschäftserhaltung"
+      }, {
+        type: "postBack",
+        title: "Marketing",
+        value: "Marketing"
+      }, {
+        type: "postBack",
+        title: "Erfahrungsaustausch mit gleichgesinnten",
+        value: "Austausch"
+      }, {
+        type: "postBack",
+        title: "Mitarbeiter und Betrieb",
+        value: "Betrieb"
+      },]
+    }
+
+    agent.add(new Payload(agent.UNSPECIFIED, payload));
+  }
+
+  function problemType(agent) {
+    const payload = {
+      type: 'message',
+      attachments: [],
+      suggestedActions: [{
+        type: "postBack",
+        title: "Infos",
+        value: "Infos"
+      }, {
+        type: "postBack",
+        title: "Plattformen",
+        value: "Plattformen"
+      }]
+    }
+
+    agent.add(new Payload(agent.UNSPECIFIED, payload));
+  }
  
   function fallback(agent) {
     agent.add(`I didn't understand`);
@@ -81,6 +129,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   let intentMap = new Map();
   intentMap.set('Default Welcome Intent', welcome);
   intentMap.set('Default Fallback Intent', fallback);
+  intentMap.set('CompanyType', companyType);
+  intentMap.set('ProblemType', problemType);
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
