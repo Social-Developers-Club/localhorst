@@ -19,12 +19,24 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       attachments: [],
       suggestedActions: [{
         type: "postBack",
-        title: "Hi",
-        value: "Get a Quote"
+        title: "Einzelhandel",
+        value: "Einzelhandel"
       }, {
         type: "postBack",
-        title: "Ciao",
-        value: "Get a Renewal"
+        title: "Dienstleistung",
+        value: "Dienstleistung"
+      }, {
+        type: "postBack",
+        title: "Einzelunternehmer / Freiberuflich / Künstler",
+        value: "Freiberuflich"
+      }, {
+        type: "postBack",
+        title: "Gastronomie",
+        value: "Gastronomie"
+      }, {
+        type: "postBack",
+        title: "Freizeit / Unterhaltung / Kultur",
+        value: "Kultur"
       }]
     };
 
