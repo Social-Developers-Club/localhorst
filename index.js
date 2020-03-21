@@ -4,7 +4,7 @@
  
 const functions = require('firebase-functions');
 const {WebhookClient} = require('dialogflow-fulfillment');
-const {Card, Suggestion} = require('dialogflow-fulfillment');
+const {Card, Payload, Suggestion} = require('dialogflow-fulfillment');
  
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
  
@@ -14,7 +14,21 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
  
   function welcome(agent) {
-    agent.add(`Welcome to my agent!`);
+    const payload = {
+      type: 'message',
+      attachments: [],
+      suggestedActions: [{
+        type: "postBack",
+        title: "Hi",
+        value: "Get a Quote"
+      }, {
+        type: "postBack",
+        title: "Ciao",
+        value: "Get a Renewal"
+      }]
+    };
+
+    agent.add(new Payload(agent.UNSPECIFIED, payload));
   }
  
   function fallback(agent) {
