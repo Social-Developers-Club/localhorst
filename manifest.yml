@@ -1,5 +1,4 @@
 applications :
 - name: "localhorst_chatbot"
-  path: root
   command: node app.js
   memory: 256M
