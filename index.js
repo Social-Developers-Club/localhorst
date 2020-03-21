@@ -137,7 +137,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   intentMap.set('Default Fallback Intent', fallback);
   intentMap.set('CompanyType', companyType);
   intentMap.set('ProblemType', problemType);
-  intentMap.set('RecommendationType', recommendationType)
+  intentMap.set('RecommendationType', recommendationType);
   // intentMap.set('your intent name here', yourFunctionHandler);
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
