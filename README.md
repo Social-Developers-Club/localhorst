@@ -103,10 +103,10 @@ one per carousel items:
 ## Additional project documentation
 
 The cloud function can be called using the following link
- [](https://us-central1-dummy-ybfjgq.cloudfunctions.net/dialogflowFirebaseFulfillment)
+ [Here](https://us-central1-dummy-ybfjgq.cloudfunctions.net/dialogflowFirebaseFulfillment)
  
  Documentation for Google Cloud Functions:
- [](https://cloud.google.com/functions/docs)
+ [Here](https://cloud.google.com/functions/docs)
  
  The GitHub repository of the code:
- [](https://github.com/Social-Developers-Club/localhorst-chatbot-backend)
+ [Here](https://github.com/Social-Developers-Club/localhorst-chatbot-backend)
