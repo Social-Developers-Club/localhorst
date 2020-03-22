@@ -94,6 +94,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   function recommendationType(agent) {
     console.log(agent.contexts)
 
+    let params = agent.contexts.filter(x => x.name === 'companytype')
+    console.log(params)
+    console.log(params[0].parameters.companytype)
+    console.log(params[0].parameters.problemtype)
+    console.log(params[0].parameters.recommendationtype)
+
     agent.add('TEST ANALYZE CONTEXTS');
   }
  
